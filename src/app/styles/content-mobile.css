@@ -1,0 +1,74 @@
+/* iPhone Preview Container */
+.iphone-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    position: relative;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: fixed; 
+    top: 20px;
+    left: 50px;
+    z-index: 1100; 
+    background-color: white; 
+    border-radius: 50%;
+    padding: 3px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .close-icon {
+    font-size: 2rem;
+    color: #4a90e2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-icon:hover {
+    color: #3a78b2;
+  }
+  
+  /* iPhone Body */
+  .iphone-body {
+    width: 375px; 
+    height: 667px; 
+    background: black;
+    border-radius: 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    /* Add Animation */
+    animation: flyInFromSide 0.8s ease-out;
+  }
+  
+  /* iPhone Screen */
+  .iphone-screen {
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Fly-In Animation */
+  @keyframes flyInFromSide {
+    from {
+      transform: translateX(-100%) scale(0.8); 
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  

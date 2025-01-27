@@ -1,0 +1,182 @@
+/* Web Article View */
+.article-container.web {
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    padding: 20px;
+    max-width: 800px; 
+    margin: 40px auto; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    overflow: hidden;
+  }
+  
+  .article-container.web h1 {
+    font-size: 2rem; 
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  .article-container.web img {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .article-container.web .article-author {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px; 
+  }
+  
+  .article-container.web .article-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 90%; 
+    margin: 0 auto; 
+  }
+  
+  /* Styled Back Button for Web */
+  .article-container.web button {
+    background-color: #4a90e2; 
+    color: white; 
+    font-size: 1rem; 
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+  }
+  
+  .article-container.web button:hover {
+    background-color: #3a78b2; 
+    transform: translateY(-2px); 
+  }
+  
+  .article-container.web button:active {
+    background-color: #2a5a92; 
+    transform: translateY(0); 
+  }
+  
+  /* Tablet Article View */
+  .tablet-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 0; 
+    margin: 0; 
+    height: 100vh; 
+    box-sizing: border-box; 
+    transform: scale(0.95);
+  }
+  
+  .tablet-body {
+    width: 768px;
+    height: 1024px;
+    background: black;
+    border-radius: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0.75);
+    position: relative;
+    z-index: 0;
+  }
+  
+  .tablet-screen {
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .tablet-camera {
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    height: 5px;
+    background: #4a4a4a;
+    border-radius: 10px;
+    z-index: 1; 
+  }
+  
+  .tablet-home-button {
+    position: absolute;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background: #4a4a4a;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    z-index: 1; 
+  }
+  
+  .article-container.tablet h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .article-container.tablet img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .article-container.tablet .article-author {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .article-container.tablet .article-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    padding: 0 15px;
+  }
+  
+  /* Styled Back Button for Tablet */
+  .tablet-button {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .tablet-button:hover {
+    background-color: #3a78b2;
+  }
+  
+  .tablet-button:active {
+    background-color: #2a5a92;
+  }
+  

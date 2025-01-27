@@ -1,0 +1,194 @@
+/* General Styling for Recent Activity Section */
+.activities-container {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+/* Gradient Border Effect */
+.activities-container::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 18px;
+  z-index: -1;
+}
+
+/* Section Title Styling */
+.activities-container .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Recent Activity Title Container */
+.recent-activity-title-container {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+/* Recent Activity Title */
+.recent-activity-title {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Helvetica, sans-serif;
+  color: #4a90e2;
+  margin-left: 10px;
+  padding: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Subtle Glow Effect for Title */
+.recent-activity-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px 0 0;
+  background: linear-gradient(to right, #4a90e2, #9b4de4, #d62388);
+  border-radius: 2px;
+  position: relative;
+  left: 0;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* List Group for Activities */
+.activities-container .list-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activities-container .list-group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.activities-container .list-group-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f3f7ff;
+}
+
+/* Text Styling for Activity Details */
+.activities-container .list-group-item strong {
+  color: #4a90e2;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.activities-container .list-group-item em {
+  font-style: italic;
+  color: #9b4de4;
+}
+
+.activities-container .list-group-item span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Empty State Styling */
+.activities-container .list-group-item span {
+  font-size: 1rem;
+  color: #999;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .activities-container {
+    padding: 15px;
+  }
+
+  .activities-container .recent-activity h4 {
+    font-size: 1.5rem;
+  }
+
+  .activities-container .list-group-item {
+    padding: 15px;
+  }
+}
+
+/* Filters Container */
+.filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Unified Filter Styles */
+.filter-select,
+.filter-date-picker {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f3f0f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+/* Hover and Focus States */
+.filter-select:hover,
+.filter-date-picker:hover {
+  background: #eaeef5;
+}
+
+.filter-select:focus,
+.filter-date-picker:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+/* Placeholder Styling for Date Picker */
+.filter-date-picker::placeholder {
+  color: #343131;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .filter-select,
+  .filter-date-picker {
+    width: 100%;
+  }
+}

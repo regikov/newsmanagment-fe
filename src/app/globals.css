@@ -1,0 +1,166 @@
+/* General Layout */
+body {
+  background: linear-gradient(to right, #4a90e2, #9b4de4, #7325e8);
+  margin: 0;
+  height: 100%;
+}
+
+/* Scaling for Content */
+.scale-container {
+  transform: scale(0.8); 
+  transform-origin: top center; 
+  width: auto; 
+  height: auto; 
+  position: relative; 
+  z-index: 0; 
+}
+
+/* Header Section */
+header {
+  background-color: #ffffff;
+  border-bottom: 8px solid transparent;
+  border-image: linear-gradient(to right, #4a90e2, #9b4de4, #d62388);
+  border-image-slice: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 12px;
+  padding-bottom: 6px; 
+
+}
+
+header .container {
+  max-width: 1140px; 
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: scale(1.1);
+  padding: 10px;
+}
+
+header img.logo {
+  height: 50px; 
+}
+
+/* Search Bar Container */
+form.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+/* Search Input */
+form.d-flex input[type="text"] {
+  width: 220px; 
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem; 
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+form.d-flex input[type="text"]:focus {
+  outline: none; 
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Search Button */
+form.d-flex button {
+  background-color:  #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 0.9rem; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form.d-flex button:hover {
+  background-color: #2a68c4;
+}
+
+form.d-flex button:active {
+  background-color: #1a4a8a;
+  transform: translateY(2px);
+}
+
+/* General Navigation Styling */
+.nav-link-custom,
+.dropdown .dropdown-toggle {
+  background-color: #ffffff;
+  color: #343a40;
+  font-size: 1rem; 
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link-custom:hover,
+.dropdown .dropdown-toggle:hover {
+  background-color: #f8f9fa;
+  color: #1649ef;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+  z-index: 1100;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1100;
+  top: 100%;
+  transform: none;
+}
+
+.dropdown .dropdown-item {
+  padding: 10px 14px;
+  font-size: 0.95rem; 
+  color: #343a40;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown .dropdown-item:hover {
+  background-color: #637df0;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link-custom,
+  .dropdown .dropdown-toggle {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  header img.logo {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .dropdown .dropdown-menu {
+    position: static;
+    z-index: auto;
+    width: 100%;
+  }
+}
