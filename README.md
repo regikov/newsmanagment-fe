@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# News Management Frontend 
 
-## Getting Started
+A responsive and modern frontend application made with NextJS,  designed with clean, modular CSS + Bootstrap for intuitive user interactions. This project focuses on enhancing user experience through animations, responsive layouts, and clean visual designs.
 
-First, run the development server:
+## Features
+* **Sidebar Section:**
+    * Interactive hover effects for improved navigation.
+    * Gradient borders and modern container layout.
+* **Main Content Section:**
+    * Responsive cards with hover animations and styled titles/text.
+* **Highlights Section:**
+    * Decorative gradient lines and dynamic tag styles.
+    * Structured title layout for better readability.
+* **Analytics Grid:**
+    * Fully responsive grid with interactive hover effects.
+    * Shadow enhancements for a floating effect.
+* **Recent Activity Section:**
+    * Fade-in animations for smooth transitions.
+    * Gradient background and detailed list-group styling.
+* **Filters Container:**
+    * Unified filter styles with responsive adjustments.
+    * Hover and focus effects for better usability.
+      
+## Technologies Used
+* NextJS
+* HTML5 
+* CSS3 + Bootstrap
+* JavaScript
+  
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/frontend-project.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd frontend-project
+   ```
+## Run the application 
 
+1. Install Dependencies:
+Use your package manager to install all the required dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the Development Server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server to view the project locally:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Open the Application:
+   
+Open your browser and go to http://localhost:3000 to see the application running.
 
-## Learn More
+4. Build for Production (Optional):
 
-To learn more about Next.js, take a look at the following resources:
+To build the project for production, run:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Serve the production build locally to test:
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
